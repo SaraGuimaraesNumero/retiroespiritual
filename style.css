@@ -771,7 +771,7 @@ h1 {
     .decor-ori {
         position: absolute;
         right: 2%;
-        bottom: 26vh;   /* posição relativa à altura da tela */
+        bottom: 10vh;   /* posição relativa à altura da tela */
         width: 28vw;
         max-width: 110px;
         opacity: 0.85;
@@ -815,7 +815,7 @@ h1 {
         display: flex;
         justify-content: center;
         gap: 25px;
-        margin-top: 320px;              /* Espaço depois do Ori */
+        margin-top: 600px;              /* Espaço depois do Ori */
         padding-bottom: 15px;
     }
 
