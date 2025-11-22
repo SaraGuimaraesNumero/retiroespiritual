@@ -57,11 +57,14 @@ body {
 }
 
 /* Reduzir o espaçamento do título */
+/* Estilo especial do título */
 h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  margin-top: 10px;
+    font-weight: 900;
+    color: #c89a32;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3),
+                 0 0 12px rgba(255,240,190,0.8);
 }
+
 
 /* Subtítulo mais leve */
 .subtitulo-frase {
@@ -695,111 +698,70 @@ h1 {
     }
 }
 
+
 /* ============================= */
-/*    AJUSTE DA TELA INICIAL     */
-/*           MOBILE              */
+/*        MOBILE (TELA INICIAL)  */
 /* ============================= */
 @media (max-width: 768px) {
 
-    /* Layout vira coluna */
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
     .layout {
         flex-direction: column;
         justify-content: flex-start;
-        gap: 10px;
+        align-items: center;
+        gap: 0px;
         padding: 0;
     }
 
-    /* Remove a altura gigante do brasão */
     .brasao {
+        width: 65vw;
+        max-width: 270px;
         height: auto;
-        width: 60vw;
-        max-width: 260px;
-        max-height: 260px;
     }
 
-    /* Centraliza e ajusta textos */
     .lado-direito h1 {
-        font-size: 1.8rem;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.9rem;
+        font-weight: 900;
+        color: #c89a32;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.25),
+                     0px 0px 6px #fff,
+                     0px 0px 10px rgba(255,255,200,0.9);
     }
 
-    /* Botões ocupam largura responsiva */
     .botoes {
-        width: 80%;
-        gap: 12px;
+        width: 85%;
+        gap: 14px;
     }
 
     .btn {
         width: 100%;
+        padding: 15px 0;
         font-size: 1.2rem;
-        padding: 14px 0;
     }
 
-    /* Ícones fixos no celular menores */
-    .icones-contato img[alt="WhatsApp"] {
-        width: 55px;
-        height: 55px;
-    }
-
-    .icones-contato img[alt="E-mail"] {
-        width: 45px;
-        height: 45px;
-    }
-}
-/* =============================== */
-/* ÍCONES NA PARTE DE BAIXO (MOBILE) */
-/* =============================== */
-@media (max-width: 768px) {
-
-    .icones-contato {
-        position: static; /* Deixa de ser fixo */
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .icone-contato {
-        width: 55px;
-        height: 55px;
-    }
-
-    .layout {
-        padding-bottom: 0; /* remove espaço extra */
-    }
-}
-
-/* ============================= */
-/* ÍCONES LOGO APÓS O BOTÃO (MOBILE) */
-/* ============================= */
-@media (max-width: 768px) {
-
-    /* Ícones deixam de ser fixos */
+    /* ÍCONES após os botões */
     .icones-contato {
         position: relative;
-        bottom: 0;
-        right: 0;
-        margin-top: 22px;
+        width: 100%;
         display: flex;
         justify-content: center;
         gap: 25px;
-        width: 100%;
-        padding-bottom: 25px;
-    }
-
-    /* Ajusta tamanho dos ícones */
-    .icone-contato {
-        width: 55px;
-        height: 55px;
-    }
-
-    /* Ajuda o layout a empurrar os ícones pro final */
-    .layout {
+        margin-top: 22px;
         padding-bottom: 30px;
     }
+
+    .icone-contato {
+        width: 55px !important;
+        height: 55px !important;
+    }
 }
+
 
 
