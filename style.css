@@ -126,6 +126,7 @@ h1 {
 
 /* ÍCONES FIXOS DE CONTATO (WhatsApp e E-mail) */
 .icones-contato {
+  position: fixed;
   bottom: 10px;
   right: 10px;
 }
@@ -768,6 +769,36 @@ h1 {
 
     .layout {
         padding-bottom: 0; /* remove espaço extra */
+    }
+}
+
+/* ============================= */
+/* ÍCONES LOGO APÓS O BOTÃO (MOBILE) */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Ícones deixam de ser fixos */
+    .icones-contato {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 22px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    /* Ajusta tamanho dos ícones */
+    .icone-contato {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* Ajuda o layout a empurrar os ícones pro final */
+    .layout {
+        padding-bottom: 30px;
     }
 }
 
