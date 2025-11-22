@@ -827,7 +827,7 @@ h1 {
 
 @media (max-width: 768px) {
     .brasao {
-        transform: translateX(-20px); /* 👈 move um pouco para a esquerda */
+        transform: translateX(30px); /* 👈 move um pouco para a esquerda */
     }
 }
 
