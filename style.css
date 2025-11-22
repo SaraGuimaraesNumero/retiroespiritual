@@ -746,4 +746,29 @@ h1 {
         height: 45px;
     }
 }
+/* =============================== */
+/* ÍCONES NA PARTE DE BAIXO (MOBILE) */
+/* =============================== */
+@media (max-width: 768px) {
+
+    .icones-contato {
+        position: static; /* Deixa de ser fixo */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .icone-contato {
+        width: 55px;
+        height: 55px;
+    }
+
+    .layout {
+        padding-bottom: 0; /* remove espaço extra */
+    }
+}
+
 
